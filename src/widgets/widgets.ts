@@ -194,3 +194,9 @@ export interface Tile {
   created: string;
   modified: string;
 }
+
+export type ExpandedTileProperty = keyof ExpandedTileOptions;
+export type TileOptionsProperty = keyof InlineTileOptions;
+export type OptionsProperty = keyof WidgetOptions;
+export type StyleOptionsProperty = keyof Style;
+export type DynamicFilterFallbackProperty = keyof DynamicFilterFallback;
