@@ -172,7 +172,7 @@ export interface Assets {}
 
 export interface CustomTemplates {
   layout: Layout;
-  tile: Tile;
+  tile: TileInfo;
 }
 
 export interface Layout {
@@ -185,7 +185,7 @@ export interface Layout {
   modified: string;
 }
 
-export interface Tile {
+export interface TileInfo {
   display_name: string;
   html_id: string;
   mandatory: number;
