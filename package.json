@@ -1,8 +1,8 @@
 {
   "name": "@stackla/public-types",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "Public types for UGC Widgets",
-  "types": "dist/widgets/index.d.ts",
+  "types": "dist/src/widgets/index.d.ts",
   "repository": "https://github.com/Stackla/public-types",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@stackla"
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --declaration --declarationMap --emitDeclarationOnly --outDir dist",
-    "prepare": "npm run build"
+    "prepare": "rm -r dist && npm run build"
   },
   "author": "",
   "license": "ISC",

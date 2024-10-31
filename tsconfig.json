@@ -26,6 +26,5 @@
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules"],
-  "include": ["dist/**/*.d.ts", "dist/**/*.js"]
+  "exclude": ["node_modules"]
 }

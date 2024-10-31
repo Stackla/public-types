@@ -124,7 +124,7 @@ export type Type = {
 
 export type StylePropertyValue = string | boolean | DynamicFilterFallback;
 
-export interface Style extends Record<string, StylePropertyValue> {
+export interface Style {
   auto_refresh: string;
   click_through_url: string;
   enable_custom_tiles_per_page: boolean;
@@ -194,6 +194,16 @@ export interface Tile {
   created: string;
   modified: string;
 }
+
+export type WidgetResponse = {
+  html: string;
+  customCSS: string | null;
+  customJS: string | null;
+  merchantId: string | null;
+  stackId: number | null;
+  tileCount: number;
+  title: string;
+} & SharedWidgetOptions;
 
 export type ExpandedTileProperty = keyof ExpandedTileOptions;
 export type TileOptionsProperty = keyof InlineTileOptions;
